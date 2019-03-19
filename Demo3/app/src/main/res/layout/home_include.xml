@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/icon_triangle"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/white"
+            android:text="杭州市"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_shape"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_city"
+            android:background="@drawable/shape_radio"
+            android:clickable="true"
+            android:drawableLeft="@drawable/sosuo"
+            android:drawablePadding="5dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="请输入关键字搜索"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>
